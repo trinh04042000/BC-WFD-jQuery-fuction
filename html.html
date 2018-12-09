@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").html("Hello <b>world!</b>");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <h2>
+        Hàm htm
+    </h2>
+    <h3>Ý nghĩa</h3>
+    <p>
+       - Phương thức html () thiết lập hoặc trả về nội dung (InternalHTML) của các phần tử được chọn.
+       - Khi phương thức này được sử dụng để trả về nội dung, nó sẽ trả về nội dung của phần tử khớp FIRST.
+    </p>
+<div class="head-link">
+    <h3>Cú pháp</h3>
+    <h4>Trả lại nội dung</h4>
+    <p>
+        $(selector).html()
+    </p>
+    <h4>Đặt nội </h4>
+    <p>$(selector).html(content)
+    </p>
+    <h4>Đặt nội dung vào trong hàm
+    </h4>
+    <p>
+        $(selector).html(function(index,currentcontent))
+
+    </p>
+    <h4>
+        Trong đó:
+    </h4>
+    <p>+Content:-Cần thiết. Chỉ định nội dung mới cho các yếu tố được chọn .
+    </p>
+    <p>
+        fu(index.currentcontent):Không bắt buộc. Chỉ định một hàm trả về nội dung mới cho các phần tử được chọn
+    </p>
+</div>Up
+<div class="content">
+    <p>Demo
+    </p>
+    <button>Change content of all p elements</button>
+
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+
+</div>
+</div>
+</body>
+</html>

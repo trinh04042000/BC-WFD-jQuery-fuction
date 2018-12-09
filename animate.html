@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#box").animate({height: "300px"});
+            });
+            $("#btn2").click(function(){
+                $("#box").animate({height: "100px"});
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <h2>
+        Hàm animate
+    </h2>
+    <h3>Ý nghĩa</h3>
+    <p>
+        Thay đổi một phần tử từ trạng thái này sang trạng thái khác bằng các kiểu CSS.<br> Giá trị thuộc tính CSS được thay đổi dần dần, để tạo hiệu ứng hoạt hình.
+    </p>
+</div>
+<div class="head-link">
+    <h3>Cú pháp</h3>
+    <p>
+        $(selector).animate({styles},speed,easing,callback))
+    </p>
+    <h4>
+        Trong đó:
+    </h4>
+    <p>+Styles:-Cần thiết. Chỉ định một hoặc nhiều thuộc tính / giá trị CSS để tạo hiệu ứng.
+    </p>
+    <p>+Speed:-Không bắt buộc.<br>-Chỉ tốc độ của hiệu ứng ẩn.<br>-Giá trị mặc định là 400 mili giây</p>
+    <p>+Easing:-Không bắt buộc.<br>-Chỉ định tốc độ của phần tử trong các điểm khác nhau của hình ảnh động.<br>-Giá trị mặc định là "swing"</p>
+    <p>+Callback:-Không bắt buộc.<br>- Một chức năng sẽ được thực hiện sau khi hoạt ảnh hoàn thành</p>
+</div>
+<div class="content">
+    <h3>Demo</h3>
+    <button id="btn1">Animate height</button>
+    <button id="btn2">Reset height</button>
+
+    <div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
+</div>
+</body>
+</html>

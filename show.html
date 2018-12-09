@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $("p").hide();
+            });
+            $(".btn2").click(function(){
+                $("p").show();
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <h2>
+        Hàm show
+    </h2>
+    <h3>Ý nghĩa</h3>
+    <p>
+        Hiên các phần tử được chọn bị ẩn
+    </p>
+</div>
+<div class="head-link">
+    <h3>Cú pháp</h3>
+    <p>
+        $(selector).show(speed,easing,callback)
+    </p>
+    <h4>
+        Trong đó:
+    </h4>
+    <p>+Speed:-Không bắt buộc.<br>-Chỉ tốc độ của hiệu ứng hiển thị.<br>-Giá trị mặc định là 400 mili giây</p>
+c    <p>+Callback:-Không bắt buộc.<br>-Một hàm được thực thi sau khi phương thức show () hoàn thành</p>
+</div>
+<div class="content">
+    <h3>Demo</h3>
+    <p>This is a paragraph.</p>
+
+    <button class="btn1">Hide</button>
+    <button class="btn2">Show</button>
+</div>
+</body>
+</html>

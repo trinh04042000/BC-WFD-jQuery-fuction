@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").on("click", function(){
+                alert("The paragraph was clicked.");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <h2>
+        Hàm on
+    </h2>
+    <h3>Ý nghĩa</h3>
+    <p>
+        Phương thức Prepend () chèn nội dung được chỉ định vào đầu các phần tử được chọn.
+    </p>
+
+</div>
+<div class="head-link">
+    <h3>Cú pháp</h3>
+    <p>
+        $(selector).on(event,childSelector,data,function,map)
+    </p>
+    <h4>Trong đó:</h4>
+    <p>
+
+        +event:-Cần thiết. Chỉ định một hoặc nhiều sự kiện hoặc không gian tên để đính kèm với các thành phần được chọn.
+                -Nhiều giá trị sự kiện được phân tách bằng dấu cách. Phải là một sự kiện hợp lệ
+        +childSelector:Không bắt buộc. Chỉ định rằng trình xử lý sự kiện chỉ nên được gắn vào các phần tử con đã chỉ định
+        +data:-Không bắt buộc. Chỉ định dữ liệu bổ sung để truyền cùng chức năng
+        +function:-Chỉ định chức năng để chạy khi sự kiện xảy ra
+        +map:-Chỉ định bản đồ sự kiện ({event: function, event: function, ...}) có chứa một hoặc nhiều sự kiện để đính kèm vào các thành phần được chọn và các hàm để chạy khi sự kiện xảy ra
+    </p>
+
+</div>
+<div class="content">
+    <h3>Demo</h3>
+    <p>Click this paragraph.</p>
+</div>
+</body>
+</html>

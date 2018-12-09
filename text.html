@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").text("Hello world!");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <h2>
+        Hàm text
+    </h2>
+    <h3>Ý nghĩa</h3>
+    <p>Phương thức text () đặt hoặc trả về nội dung văn bản của các phần tử được chọn.</p>
+</div>
+<div class="head-link">
+    <h3>Cú pháp</h3>
+    <h4>Return text content:</h4>
+    <p>$(selector).text()
+    </p>
+    <h4>Set text content:</h4>
+    <p>$(selector).text(content)</p>
+    <h4>Set text content using a function:
+    </h4>
+    <p>$(selector).text(function(index,currentcontent))</p>
+    <h4>Trong đó:
+    </h4>
+    <p>
+        +content: Chỉ định nội dung văn bản mới cho các thành phần được chọn<br>
+        +function(index,currentcontent):Chỉ định một hàm trả về nội dung văn bản mới cho các thành phần được chọn<br>
+        index - Trả về vị trí chỉ mục của phần tử trong tập hợp<br>
+        currentcontent - Trả về nội dung hiện tại của các thành phần được chọn
+    </p>
+</div>
+<div class="content">
+    <h3>Demo</h3>
+    <button>Set text content for all p elements</button>
+
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+
+</div>
+</body>
+</html>

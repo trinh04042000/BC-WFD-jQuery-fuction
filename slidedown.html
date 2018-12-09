@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $("p").slideUp();
+            });
+            $(".btn2").click(function(){
+                $("p").slideDown();
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <h2>
+        Hàm
+    </h2>
+    <h3>Ý nghĩa</h3>
+    <p>
+        <div class="header">
+            <h2>
+                Hàm Slide
+            </h2>
+            <h3>Ý nghĩa</h3>
+    <p>
+        Phương thức slideUp() dùng để ẩn (kèm theo hiệu ứng trượt) một phần tử.    </p>
+</div>
+<div class="head-link">
+    <h3>Cú pháp</h3>
+    <p>
+        $(selector).slideUp(time,speed,callback);
+    </p>
+    <h4>
+        Trong đó:
+    </h4>
+    <p>+Time:- Chỉ định khoảng thời gian mà phần tử bắt đầu được ẩn cho đến khi ẩn hoàn toàn.
+    </p>
+    <p>+Speed:-Chỉ định tốc độ ẩn phần tử ở những thời điểm khác nhau.
+    <p>+Callback:-Một hàm callback sẽ được thực thi sau khi phương thức slideUp() đã được thực thi hoàn tất.</p>
+</div>Up
+<div class="content">
+    <p>Demo
+    </p>
+    <p>This is a paragraph.</p>
+    <button class="btn1">Slide up</button>
+    <button class="btn2">Slide down</button>
+
+</div>
+</body>
+</html>

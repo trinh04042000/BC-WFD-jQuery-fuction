@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $("p").fadeOut()
+            });
+            $(".btn2").click(function(){
+                $("p").fadeIn();
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <h2>
+        Hàm Fad
+    </h2>
+    <h3>Ý nghĩa</h3>
+    <p>
+        Phương thức fadeOut () dần thay đổi độ mờ, đối với các phần tử được chọn, từ hiển thị sang ẩn (hiệu ứng mờ dần).
+    </p>
+</div>
+<div class="head-link">
+    <h3>Cú pháp</h3>
+    <p>
+        $(selector).fadeOut(speed,easing,callback)
+    </p>
+    <h4>
+        Trong đó:
+    </h4>
+    <p>+Styles:-Cần thiết. Chỉ định một hoặc nhiều thuộc tính / giá trị CSS để tạo hiệu ứng.
+    </p>
+    <p>+Speed:-Không bắt buộc.<br>-Chỉ tốc độ của hiệu ứng ẩn.<br>-Giá trị mặc định là 400 mili giây</p>
+    <p>+Easing:-Không bắt buộc.<br>-Chỉ định tốc độ của phần tử trong các điểm khác nhau của hình ảnh động.<br>-Giá trị mặc định là "swing"</p>
+    <p>+Callback:-Không bắt buộc.<br>- Một chức năng sẽ được thực hiện sau khi hoạt ảnh hoàn thành</p>
+</div>
+<div class="content">
+
+    <p>This is a paragraph.</p>
+
+    <button class="btn1">Fade out</button>
+    <button class="btn2">Fade in</button>
+
+
+</div>
+</body>
+</html>

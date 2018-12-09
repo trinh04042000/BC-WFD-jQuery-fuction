@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").on("click", function(){
+                $(this).css("background-color", "pink");
+            });
+            $("button").click(function(){
+                $("p").off("click");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <h2>
+        Hàm off
+    </h2>
+    <h3>Ý nghĩa</h3>
+    <p></p>
+</div>
+<div class="head-link">
+    <h3>Cú pháp</h3>
+    <p>
+        $(selector).off(event,selector,function(eventObj),map)
+    </p>
+    <h4>Trong đó:
+    </h4>
+    <p>
+        +event: Chỉ định một hoặc nhiều sự kiện hoặc không gian tên để xóa khỏi phần tử đã chọn<br>
+        +selector:Một bộ chọn phù hợp với phương thức ban đầu được truyền cho phương thức on () khi đính kèm các trình xử lý sự kiện<br>
+        +function(eventObj):Chỉ định chức năng để chạy khi sự kiện xảy ra<br>
+        +map:Chỉ định bản đồ sự kiện ({event: function, event: function, ...}) có chứa một hoặc nhiều sự kiện để đính kèm vào các phần tử và các hàm để chạy khi sự kiện xảy ra
+    </p>
+</div>
+<div class="content">
+    <h3>Demo</h3>
+    <p>
+    <p>Click this paragraph to change its background color.</p>
+    <p>Click the button below and then click on this paragraph (the click event is removed).</p>
+
+    <button>Remove the click event handler</button>
+    </p>
+</div>
+</body>
+</html>

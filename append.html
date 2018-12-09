@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("p").append(" <b>Appended text</b>.");
+            });
+            $("#btn2").click(function(){
+                $("ol").append("<li>Appended item</li>");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <h2>
+        Hàm append
+    </h2>
+    <h3>Ý nghĩa</h3>
+    <p>
+        Phương thức append () chèn nội dung được chỉ định vào cuối các phần tử được chọn.
+    </p>
+</div>
+    <div class="head-link">
+        <h3>Cú pháp</h3>
+        <p>
+            $(selector).append(content,function(index,html))
+        </p>
+        <h4>Trong đó:</h4>
+        <p>
+            +content:Cần thiết. Chỉ định nội dung cần chèn
+            +function(index,html):Không bắt buộc. Chỉ định một hàm trả về nội dung cần chèn
+        </p>
+    </div>
+<div class="content">
+    <h3>Demo</h3>
+
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+    <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ol>
+
+    <button id="btn1">Append text</button>
+    <button id="btn2">Append list item</button>
+</div>
+</body>
+</html>

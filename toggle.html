@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <h2>
+        Hàm toogle
+    </h2>
+    <h3>Ý nghĩa</h3>
+    <p>
+        Phương pháp này kiểm tra các yếu tố được lựa chọn cho khả năng hiển thị.<br>
+        show () được chạy nếu một phần tử bị ẩn. ẩn () được chạy nếu một phần tử hiển thị -<br>
+        Điều này tạo ra hiệu ứng chuyển đổi.
+
+    </p>
+</div>
+<div class="head-link">
+    <h3>Cú pháp</h3>
+    <p>
+        $(selector).toggle(speed,easing,callback)
+    </p>
+    <h4>
+        Trong đó:
+    </h4>
+    <p>+Styles:-Cần thiết. Chỉ định một hoặc nhiều thuộc tính / giá trị CSS để tạo hiệu ứng.
+    </p>
+    <p>+Speed:-Không bắt buộc.<br> Chỉ định tốc độ của hiệu ứng ẩn / hiển thị</p>
+    <p>+Easing:-Không bắt buộc.<br>-Chỉ định tốc độ của phần tử trong các điểm khác nhau của hình ảnh động.<br>-Giá trị mặc định là "swing"</p>
+    <p>+Callback:-Không bắt buộc.<br>- Một chức năng sẽ được thực hiện sau khi hoạt ảnh hoàn thành</p>
+</div>
+<div class="content">
+    <p>This is a paragraph.</p>
+    <button>Toggle between hide() and show()</button>
+
+</div>
+</body>
+</html>

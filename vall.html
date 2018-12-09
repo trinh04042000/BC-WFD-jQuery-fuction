@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("input:text").val("Glenn Quagmire");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <h2>
+        Hàm vall
+    </h2>
+    <h3>Ý nghĩa</h3>
+    <p>
+        Phương thức val () trả về hoặc đặt thuộc tính giá trị của các phần tử được chọn.
+    </p>
+</div>
+    <div class="head-link">
+        <h3>Cú pháp</h3>
+        <h4>Trả về thuộc tính giá trị</h4>
+        <p>
+            $(selector).val()
+        </p>
+        <h4>Set the value attribute:</h4>
+        <p>$(selector).val(value)</p>
+        <h4>Set the value attribute using a function:</h4>
+        <p>$(selector).val(function(index,currentvalue))</p>
+    </div>
+<div class="content">
+   <h3>
+       <p>Name: <input type="text" name="user"></p>
+       <button>Set the value of the input field</button>
+   </h3>
+</div>
+</body>
+</html>

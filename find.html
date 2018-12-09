@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(function(){
+            $('li').find('.test').css('background-color','blue');
+        });
+    </script>
+</head>
+</head>
+<body>
+<div class="header">
+   <h2>Hàm Find</h2>
+    <h3>Ý nghĩa</h3>
+    <p>Giúp tìm thành phần trong thành phần cha.</p>
+</div>
+<div class="head-link">
+    <h4>Cú pháp sử dụng</h4>
+    <h4>-find(selector)</h4>
+    <p>
+       vd: $('li').find('.test');
+    </p>
+    <h4>-find(element)</h4>
+    <p>
+        vd: $('li').find($('div.test'));
+    </p>
+</div>
+<div class="content">
+    <h4>Demo</h4>
+        <ul>
+            <li class="first">Thành phần thứ 1</li>
+            <li class="second">Thành phần thứ 2</li>
+            <li class="third">
+    <p>Thành phần thứ 3</p>
+    <ul>
+        <li>Thành phần con thứ 1</li>
+        <li class="test">Thành phần con thứ 2</li>
+        <li>Thành phần con thứ 3</li>
+    </ul>
+    </li>
+    <li class="fourth">Thành phần thứ 4</li>
+    <li class="fifth">Thành phần thứ 5</li>
+    </ul>
+</div>
+</body>
+</html>
